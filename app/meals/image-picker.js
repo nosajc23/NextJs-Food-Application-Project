@@ -6,7 +6,7 @@ import Image from 'next/image';
 import classes from './image-picker.module.css';
 
 export default function ImagePicker({label, name}){
-    useState();
+    const [pickedImage, setPickedImage] = useState();
     const imageInput = useRef();
     
     function handlePickClick() {
